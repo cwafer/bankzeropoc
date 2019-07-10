@@ -1,0 +1,26 @@
+﻿@model BankZeroIDPoC.ViewModels.ManagerDashboardViewModel
+@{ 
+    ViewData["Title"] = "Manager Dashboard";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="row">
+            <h2>@ViewData["Title"]</h2>
+
+            <div class="col-md-2">
+                <img src="@Model.ProfileImage"
+                     alt="" class="img-rounded img-responsive" />
+            </div>
+            <div class="col-md-4">
+                <h3>@Model.Name</h3>
+                <p>
+                    <i class="glyphicon glyphicon-envelope"></i> @Model.EmailAddress
+                </p>
+                <p>Role:@Model.Roles</p>
+                <p>Team Members: @Model.TeamMembers</p>
+                <p>Expense Reports: @Model.ExpenseReports</p>
+            </div>
+        </div>
+    </div>
+</div>

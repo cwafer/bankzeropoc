@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Bank Zero ID PoC, powered by Auth0</h2>
+        <p>
+            Welcome to Bank Zero!
+            @if (User.Identity.IsAuthenticated)
+            {
+                <p>Hello @User.Identity.Name!</p>
+                <li><a asp-controller="Account" asp-action="Profile">View your Account Profile</a></li>
+                <li><a id="qsLogoutBtn" asp-controller="Account" asp-action="Logout">Logout</a></li>
+            }
+            else
+            {
+                <li><a id="qsLoginBtn" asp-controller="Account" asp-action="Login">Login</a> to the application.</li>
+            }
+</div>
+</div>
