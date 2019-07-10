@@ -68,7 +68,6 @@ namespace BankZeroIDPoC
                 options.ClaimsIssuer = "Auth0";
 
                 // Set the correct name claim type
-                // Add the role claim type to support RBAC
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
                     NameClaimType = "name"
