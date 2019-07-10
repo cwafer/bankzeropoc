@@ -15,7 +15,7 @@ namespace BankZeroIDPoC
         /// <param name="userEmail">The e-mail address of the user.</param>
         /// <param name="apiUrl">The base URL to the Management API.</param>
         /// <param name="accessToken">The access token for the Management API.</param>
-        /// <returns></returns>
+        /// <returns>The UserId for the user.</returns>
         public string GetUserId(string userEmail, string apiUrl, string accessToken)
         {
             string userJson;
