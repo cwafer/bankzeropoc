@@ -29,8 +29,7 @@ function (user, context, callback) {
       });
 
     if (!userHasAccess) {
-      //return callback(new UnauthorizedError('Access denied.'));
-      return callback('Access denied');
+      return callback(new UnauthorizedError('Access denied.'));
     }
 
     return callback(null, user, context);
